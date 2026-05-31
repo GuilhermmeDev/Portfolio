@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark field, no border-radius — matches Vercel/Linear approach -->
+  <rect width="32" height="32" fill="#111111"/>
+  <!--
+    G mark — geometric path:
+      M 22,10       → top of gap (arc endpoint at −45° on a r=8.5 circle centered at 16,16)
+      A 8.5,8.5 … 1,0 22,22  → large arc, sweep counterclockwise, 270° through left side
+      L 22,17       → right wall of crossbar slab (up from bottom jaw to mid-height)
+      L 16,17       → horizontal crossbar going left to optical center
+  -->
+  <path
+    d="M 22,10 A 8.5,8.5 0 1,0 22,22 L 22,17 L 16,17"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
